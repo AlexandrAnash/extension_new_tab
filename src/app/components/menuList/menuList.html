@@ -1,0 +1,7 @@
+<div class="menu-list">
+	<div class="menu-list__item"
+		 ng-repeat="item in $ctrl.items">
+		<menu-item model="item"
+			       on-click="$ctrl.handlerClick(item)"></menu-item>
+	</div>
+</div>

@@ -1,0 +1,13 @@
+<div class="top-site-list" 
+     dnd-list="$ctrl.items">
+	<div class="top-site-list__item"
+         dnd-draggable="item"
+         dnd-moved="$ctrl.items.splice($index, 1)"
+         dnd-effect-allowed="move"
+         dnd-dragend="$ctrl.dndDragend(event)"
+         dnd-selected="$ctrl.models.selected = item" 
+         ng-class="{'top-site-list__selected': $ctrl.models.selected === item}"
+         ng-repeat="item in $ctrl.items">
+		<top-site model="item"></top-site>
+	</div>
+</div>

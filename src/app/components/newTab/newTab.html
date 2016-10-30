@@ -1,0 +1,10 @@
+<div class="new-tab">
+    <div class="new-tab__header">
+        <menu-list items="$ctrl.menuItems"></menu-list>
+    </div>
+    <div class="new-tab__content">
+        <search></search>
+        <top-site-list items="$ctrl.topSites"
+                       on-dragend="$ctrl.handlerDragend(items)"></top-site-list>
+    </div>
+</div>

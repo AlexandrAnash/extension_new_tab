@@ -1,0 +1,16 @@
+@import './../../../less/variables.less';
+.menu-item {
+    padding: 5px 20px;
+    border: 2px solid @base-link-color;
+    box-sizing: border-box;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, white 50%, @base-link-color 50%);
+    transition: all 0.2s;
+
+    &:hover {
+        color: white;
+        background-position: 0 -100%;
+        cursor: pointer;
+    }
+
+}

@@ -1,0 +1,27 @@
+@import '../../../less/variables.less';
+
+.top-site-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    position: relative;
+    
+    &__item {
+        width: 150px;
+        margin: 10px;
+        position: relative;
+    }
+
+    .dndDraggingSource {
+        display: none;
+    }
+    .dndPlaceholder {
+        display: flex;
+        width: 150px;
+        background: white;
+        border: 1px solid #DAEDF0;
+        border-top: 2px solid @base-link-color;
+        box-shadow: 0px 3px 10px @base-box-shadow-color;
+        text-decoration: none;
+    }
+}

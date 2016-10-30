@@ -1,0 +1,10 @@
+<a class="top-site" draggable="false" ng-href="{{::$ctrl.model.url}}" title={{::$ctrl.model.title}}>
+	<div class="top-site__title">
+		<span class="top-site__icon">
+			<img ng-src="{{::$ctrl.model.favicon}}" on-error-src='http://icons.iconarchive.com/icons/untergunter/leaf-mimes/16/empty-icon.png' alt="{{$ctrl.model.baseUrl}}">
+		</span>
+		<span class="top-site__text" ng-bind="::$ctrl.model.title">
+		</span>
+	</div>
+	<div class="top-site__content"></div>
+</a>
